@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="allphoto/logo.jpg" alt="logo image" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact_Service</a></li>
+            <i class="material-icons" onclick="closemenu()">close</i>
+          </ul>
+          <i class="material-icons" onclick="openmenu()">menu</i>
+        </nav>
+        <div class="header-text">
+          <p>MERN STACK Developer</p>
+          <h1>
+            Hello Guys welcome, <br />My name is<span> Rahul </span><br />
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about section -->
+    <div id="about">
+      <div class="conatiner">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="allphoto/mypic.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Dignissimos veritatis illum consequuntur accusamus ut odio modi
+              nulla, hic temporibus adipisci.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>MERN?MEAN</span><br />
+                  Frontend /Backend interfaces
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  Web Application
+                </li>
+                <li>
+                  <span>Data Enginner</span><br />
+                  Love to Play with Data
+                </li>
+              </ul>
+            </div>
+            <!-- ......duplicate ... -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2017-2022</span><br />
+                  HCL.PVT Limited
+                </li>
+                <li>
+                  <span>2020-2022</span><br />
+                  TCS.PVT Limited
+                </li>
+                <li>
+                  <span>2015-2022</span><br />
+                  Mindtree.PVT Limited
+                </li>
+              </ul>
+            </div>
+            <!-- ....another duplicate.... -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020</span><br />
+                  IIT Delhi
+                </li>
+                <li>
+                  <span>2020</span><br />
+                  IIT Kanpur
+                </li>
+                <li>
+                  <span>2015</span><br />
+                  BHU
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ...................services...................... -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title"></h1>
+        <div class="services-list">
+          <div>
+            <i class="fa fa-cog"></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem reiciendis exercitationem rerum ex commodi! Aliquam
+              impedit harum et repudiandae voluptates!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa fa-file-code-o"></i>
+            <h2>Data Enginner</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem reiciendis exercitationem rerum ex commodi! Aliquam
+              impedit harum et repudiandae voluptates!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa fa-circle-o-notch"></i>
+            <h2>Cloud Enginner</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem reiciendis exercitationem rerum ex commodi! Aliquam
+              impedit harum et repudiandae voluptates!
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ...................portfolio............ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">MY Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="allphoto/logo.jpg" alt="" />
+            <div class="layer">
+              <h3> Have a GOOD Day</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatem reiciendis exercitationem rerum ex commodi! Aliquam
+                impedit harum et repudiandae voluptates!
+              </p>
+              <a href="#"><i class="fa fa-plane" style="font-size:36px;"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="allphoto/background3.jpg" alt="" />
+            <div class="layer">
+                <h3> Mountain</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Voluptatem reiciendis exercitationem rerum ex commodi! Aliquam
+                  impedit harum et repudiandae voluptates!
+                </p>
+                <a href="#"><i class="fa fa-plane" style="font-size:36px;"></i></a>
+              </div>
+          </div>
+          <div class="work">
+            <img src="allphoto/bacground.jpg" alt="" />
+            <div class="layer">
+                <h3> Best Gift</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Voluptatem reiciendis exercitationem rerum ex commodi! Aliquam
+                  impedit harum et repudiandae voluptates!
+                </p>
+                <a href="#"><i class="fa fa-plane" style="font-size:36px;"></i></a>
+              </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- ...............contact...................... -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa fa-envelope-o" style="font-size:26px"></i> contactabc@gmail.com</p>
+                    <p> <i class="fa fa-phone" style="font-size:26px"></i>  098128737682</p>
+                    <div class="social-icons">
+                    <a href="https://en.wikipedia.org/wiki/Caf%C3%A9_Coffee_Day"><i class="fa fa-coffee" style="font-size:36px"></i></a>
+                    <a href="https://en.wikipedia.org/wiki/Mountain"><i class="fa fa-photo" style="font-size:36px; " ></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook-square" style="font-size:36px;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size:36px;"></i></i></a>
+                  </div>
+                  <a href="allphoto/mycv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                  <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                  </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+          <p>copyright @Rahul_Kumar <i class="fa fa-heart" style="font-size:15px;color:red"></i> Thanks for Visiting </p>
+        </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemeu=document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemeu.style.right ="0";
+      }
+      function closemenu(){
+        sidemeu.style.right ="-200px";
+      }
+
+    </script>
+  </body>
+</html>
+
+
+
+<!-- .........https://support.microsoft.com/en-us/office/send-a-form-and-collect-responses-2eaf3294-0cff-492d-884d-a1dee909e845 -->
